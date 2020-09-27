@@ -1,0 +1,388 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"shadow",
+				"text-shadow\tproperty"
+			],
+			[
+				"word",
+				"word-spacing\tproperty"
+			],
+			[
+				"back",
+				"background-image\tproperty"
+			],
+			[
+				"trans",
+				"transform\tproperty"
+			],
+			[
+				"anima",
+				"animation-duration\tproperty"
+			],
+			[
+				"tran",
+				"transform\tproperty"
+			],
+			[
+				"over",
+				"overflow-x\tproperty"
+			],
+			[
+				"inl",
+				"inline-block\tdisplay"
+			],
+			[
+				"padding",
+				"padding-top\tproperty"
+			],
+			[
+				"mar",
+				"margin-bottom\tproperty"
+			],
+			[
+				"margin",
+				"margin-top\tproperty"
+			],
+			[
+				"text",
+				"text-align\tproperty"
+			],
+			[
+				"tex",
+				"text-decoration\tproperty"
+			],
+			[
+				"paddin",
+				"padding-bottom\tproperty"
+			],
+			[
+				"font",
+				"font-kerning\tproperty"
+			],
+			[
+				"max",
+				"max-width\tproperty"
+			],
+			[
+				"list",
+				"list-style-type\tproperty"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.js",
+			"settings":
+			{
+				"buffer_size": 504,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "index.js"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 2002,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "index.html"
+			}
+		},
+		{
+			"file": "styles.css",
+			"settings":
+			{
+				"buffer_size": 0,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Cayleigh/Desktop/Game Collection"
+	],
+	"file_history":
+	[
+		"/C/MAMP/htdocs/boardtobeers/wp-content/themes/FoundationPress/src/assets/scss/_settings.scss",
+		"/C/Users/Cayleigh/Sites/boardtobeers/index.html",
+		"/C/Users/Cayleigh/Sites/boardtobeers/css/btb.css",
+		"/C/MAMP/htdocs/boardtobeers/wp-config.php",
+		"/C/MAMP/htdocs/sauced/wp-config.php",
+		"/C/MAMP/htdocs/btb/wordpress/wp-config.php",
+		"/C/Users/Cayleigh/Sites/btb/index.html",
+		"/C/Users/Cayleigh/Sites/boardtobeers/sftp-config.json",
+		"/C/Users/Cayleigh/Sites/btb/sftp-config.json",
+		"/C/Users/Cayleigh/Sites/btb/js/app.js",
+		"/C/Users/Cayleigh/Sites/btb/css/btb.css",
+		"/C/Users/Cayleigh/Sites/btb2/index.html",
+		"/C/Users/Cayleigh/Sites/btb/css/btb-max.css",
+		"/C/Users/Cayleigh/Sites/btb/index-max.html",
+		"/C/Users/Cayleigh/Sites/dirty-crow/lib/temp-index.html",
+		"/C/Users/Cayleigh/Sites/dirty-crow/sftp-config.json",
+		"/C/Users/Cayleigh/Desktop/Dirty Crow/CSS/DirtyCrow.css",
+		"/C/Users/Cayleigh/Desktop/DirtyCrowhtml"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+			"C:\\MAMP\\htdocs\\boardtobeers\\wp-content\\themes\\FoundationPress\\src\\assets\\scss"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"body"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 504,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								427,
+								427
+							]
+						],
+						"settings":
+						{
+							"auto_name": "index.js",
+							"incomplete_sync": null,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2002,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1188,
+								1188
+							]
+						],
+						"settings":
+						{
+							"auto_name": "index.html",
+							"incomplete_sync": null,
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 108.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "styles.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 58.0
+	},
+	"pinned_build_system": "",
+	"project": "boardtobeersgameapi.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 91.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
