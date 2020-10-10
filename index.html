@@ -9,10 +9,14 @@
 </head>
 <body>
 	<script type="text/x-template" id="search-template">
-		<div class="search">
-			<input type="text" placeholder="Type a name" v-model="titleString" />
-			<button v-on:click="doSearch()">Search</button>
-		</div> 
+		<form class="search">
+			<input type="text" placeholder="Type a name" name="title" />
+			<input type="text" placeholder="Min players" name="minplayers" />
+			<input type="text" placeholder="Max players" name="maxplayers" />
+			<input type="text" placeholder="Min age" name="minage" />
+			<input type="text" placeholder="Year" name="year" />
+			<button type="submit" v-on:click="searchTitle()">Search</button>
+		</form> 
 	</script>
 	<script type="text/x-template" id="card-template">
 		<div class="card">
