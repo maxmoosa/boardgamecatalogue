@@ -5,69 +5,91 @@
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js"></script>
 	<script src="https://unpkg.com/vue-router"></script>
+	<link rel="stylesheet" href="BoardGameLibrary/css/app.css">
 	<title></title>
 </head>
-<body>
+<body>	
 	<script type="text/x-template" id="search-template">
-		<form class="search">
-			<input type="text" placeholder="Type a name" name="title" />
-			<input type="text" placeholder="Min players" name="minplayers" />
-			<input type="text" placeholder="Max players" name="maxplayers" />
-			<input type="text" placeholder="Min age" name="minage" />
-			<input type="text" placeholder="Year" name="year" />
-			<button type="submit" v-on:click="searchTitle()">Search</button>
+		<form class="search grid-x grid-margin-x">
+			<div class="cell small-8 medium-8">
+				<input type="text" placeholder="Type a name" name="title" />
+			</div>
+			<div class="cell small-4 medium-2">
+				<select>
+				    <option value="1">1</option>
+				    <option value="2">2</option>
+				    <option value="3">3</option>
+				    <option value="4">4</option>
+				    <option value="5+">5+</option>
+				</select>
+			</div>
+			<div class="cell small-3 medium-2">
+				<button type="submit" class="button expanded" v-on:click="searchTitle()">Search</button>
+			</div>
 		</form> 
 	</script>
 	<script type="text/x-template" id="card-template">
-		<div class="card">
-			<h2 class="title">{{title}}</h2>
+		<div class="cell">
+			<div class="card">
+				<div class="card-divider">
+					<h2 class="title">{{title}}</h2>
+				</div>
+				<div class="card-section">
+					<img :src="image">
+				</div>
+				<div class="card-section">
+					<p class="publish" v-if="publish.length != 0"><b>Published: </b>{{publish}}</p>
+					<p class="publisher"><b>Published By: </b>{{publisher}}</p>
+					
+					<p class="design" v-if="design.length != 0"><b>Designer<span v-if="design.length > 1">s</span>: </b>
+						<span v-for="(designer, index) in design">
+							{{designer}}<span v-if="index < design.length-1">,</span> 
+						</span></p>
+					
+					<p class="artist" v-if="artists.length != 0"><b>Artist<span v-if="artists.length > 1">s</span>: </b>
+						<span v-for="(artist, index) in artists">
+							{{artist}}<span v-if="index < artists.length-1">,</span></span></p>
+					
+					<p class="age" v-if="age.length != 0"><b>Minimum Age:</b> {{age}}</p>
 
-			<p class="publish" v-if="publish.length != 0"><b>Published: </b>{{publish}}</p>
-			<p class="publisher"><b>Published By: </b>{{publisher}}</p>
-			
-			<p class="design" v-if="design.length != 0"><b>Designer<span v-if="design.length > 1">s</span>: </b>
-				<span v-for="(designer, index) in design">
-					{{designer}}<span v-if="index < design.length-1">,</span> 
-				</span></p>
-			
-			<p class="artist" v-if="artists.length != 0"><b>Artist<span v-if="artists.length > 1">s</span>: </b>
-				<span v-for="(artist, index) in artists">
-					{{artist}}<span v-if="index < artists.length-1">,</span></span></p>
-			
-			<p class="age" v-if="age.length != 0"><b>Minimum Age:</b> {{age}}</p>
+					<p class="players" v-if="minplayers.length != 0"><b>Players:</b> {{minplayers}}-{{maxplayers}}</p>
 
-			<p class="players" v-if="minplayers.length != 0"><b>Players:</b> {{minplayers}}-{{maxplayers}}</p>
+					<p class="time" v-if="minplay.length != 0"><b>Play Time:</b> {{minplay}}-{{maxplay}} minutes</p>
 
-			<p class="time" v-if="minplay.length != 0"><b>Play Time:</b> {{minplay}}-{{maxplay}} minutes</p>
-
-			<p class="description" v-if="description.length != 0"><b>Game Description:</b>{{description}}</p>
-			<img :src="image">
-		</div> 
+					<p class="description" v-if="description.length != 0"><b>Game Description:</b>{{description}}</p>
+				</div>
+				
+			</div>
+		</div>
 	</script>
-	<div id="app">
+	<div id="app" class="grid-container">
 
 		<search></search>
-
-		<game-card v-for="game in games"
-		v-bind:key="game.id"
-		v-bind:title="game.name"
-		v-bind:age="game.min_age"
-		v-bind:minplayers="game.min_players"
-		v-bind:maxplayers="game.max_players"
-		v-bind:minplay="game.min_playtime"
-		v-bind:maxplay="game.max_playtime"
-		v-bind:description="game.description_preview"
-		v-bind:publish="game.year_published"
-		v-bind:publisher="game.primary_publisher"
-		v-bind:design="game.designers"
-		v-bind:artists="game.artists"
-		v-bind:image="game.images.medium"
-		>
+		<div class="game-cards grid-x grid-padding-x small-up-1 medium-up-2 large-up-3">
+			<game-card v-for="game in games"
+			v-bind:key="game.id"
+			v-bind:title="game.name"
+			v-bind:age="game.min_age"
+			v-bind:minplayers="game.min_players"
+			v-bind:maxplayers="game.max_players"
+			v-bind:minplay="game.min_playtime"
+			v-bind:maxplay="game.max_playtime"
+			v-bind:description="game.description_preview"
+			v-bind:publish="game.year_published"
+			v-bind:publisher="game.primary_publisher"
+			v-bind:design="game.designers"
+			v-bind:artists="game.artists"
+			v-bind:image="game.images.medium"
+			>
 			
-		</game-card>
+			</game-card>
+		</div>
 		
 	</div>
-
+	<script src="BoardGameLibrary/node_modules/jquery/dist/jquery.js"></script>
+	<script src="BoardGameLibrary/node_modules/what-input/dist/what-input.js"></script>
+	<script src="BoardGameLibrary/node_modules/foundation-sites/dist/js/foundation.js"></script>
+	<script src="BoardGameLibrary/js/app.js"></script>
 	<script src="index.js"></script>
 </body>
 </html>
